@@ -1,0 +1,19 @@
+{
+  "name": "ashish",
+  "version": "1.0.0",
+  "description": "cpc assignment by xebia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AshishMadaan/CPCAssignment.git"
+  },
+  "author": "Ashish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AshishMadaan/CPCAssignment/issues"
+  },
+  "homepage": "https://github.com/AshishMadaan/CPCAssignment#readme"
+}
