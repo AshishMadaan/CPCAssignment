@@ -9,5 +9,10 @@
          <span class="container__icons container__userId" ng-bind="item.userId"></span>
          <span class="container__icons container__policy">Policy No. {{item.policyNo}} | {{item.policyNo}}</span>
       </p>
+      
+   </div>
+
+   <div class="container__result" ng-show="(typAhdCtrl.items | filter:typAhdCtrl.model).length == 0">
+      <p> Data Not Found. Please Search Again.</p>
    </div>
 </div>
