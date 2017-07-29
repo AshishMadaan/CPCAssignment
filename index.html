@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>CPC Assignment</title>
+   <link href="gen/css/style.min.css" rel="stylesheet" />
+</head>
+
+<body ng-app="app">
+   <div class="container" ng-controller="mainController">
+      <typeahead items="items" model="name" on-select="onItemSelected()" selected="checkSelected"></typeahead>
+      <h2 ng-bind="policyHolder" ng-hide="!checkSelected" class="container--policyHolder"></h2>
+   </div>
+   
+   <script src="gen/js/angular.min.js"></script>
+   <script src="src/js/index.js"></script>  
+</body>
+</html>

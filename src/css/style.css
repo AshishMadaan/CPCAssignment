@@ -1,0 +1,45 @@
+* { box-sizing: border-box; }
+
+html, body, div, span, p, h1, h2, h3, h4, label, form, table, ul, ol, li { border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: none; }
+
+html { overflow-y: scroll; }
+
+@font-face { font-family: "Roboto"; font-style: "normal"; font-weight: 300; src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2"), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+@font-face { font-family: "Roboto"; font-style: "normal"; font-weight: 500; src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2"), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+@font-face { font-family: 'CPCFonts'; src: url(../fonts/CPCFonts.eot); src: local("?"), url(../fonts/CPCFonts.woff) format("woff"), url(../fonts/CPCFonts.woff2) format("woff2"), url(../fonts/CPCFonts.ttf) format("truetype"), url(../fonts/CPCFonts.svg) format("svg"); font-weight: normal; font-style: normal; }
+::-ms-clear { display: none; }
+
+html, body { font: 400 15px "Roboto", Arial, Helvetica, sans-serif; }
+
+.container { width: 960px; margin: 0px auto; }
+.container .container--policyHolder { text-align: center; font-size: 20px; font-weight: 500; }
+.container .container__search { width: 100%; padding: 15px 30px 25px; background-color: rgba(19, 28, 78, 0.8); }
+.container .container__search ::-webkit-input-placeholder { color: #a4a0b8; }
+.container .container__search ::-moz-placeholder { color: #a4a0b8; }
+.container .container__search ::-ms-input-placeholder { color: #a4a0b8 !important; }
+.container .container__search .container__searchInput { background: transparent; border: 0px; width: 60%; color: #fff; border-bottom: solid 1px #a4a0b8; font-size: 15px; padding: 5px 0px; letter-spacing: 1px; }
+.container .container__search .container__searchInput:focus { outline: none; }
+.container .container__search:before { content: "A"; font-size: 15px; width: 18px; height: 18px; margin-right: 10px; color: #a4a0b8; }
+.container .container__items { border: solid 5px rgba(19, 28, 78, 0.8); border-top: none; background-color: rgba(247, 247, 247, 0.5); max-height: 500px; overflow-y: auto; }
+.container .container__items .container__result { padding: 15px 20px; }
+.container .container__items .container__result h2 { font-weight: 400; font-size: 20px; }
+.container .container__items .container__result p { margin: 8px 0px 5px; display: flex; flex-direction: row; }
+.container .container__items .container__result span { font-weight: 500; font-size: 16px; display: inline-block; }
+.container .container__items .container__result .container__phone { width: 25%; }
+.container .container__items .container__result .container__phone:before { content: "B"; font-size: 15px; width: 18px; height: 18px; margin-right: 10px; color: ""; }
+.container .container__items .container__result .container__userId { width: 25%; }
+.container .container__items .container__result .container__policy:before { content: "D"; font-size: 17px; width: 18px; height: 18px; margin-right: 10px; color: ""; }
+.container .container__items .container__result:nth-child(1) { background-color: #e8e8e8; }
+.container .container__icons:before { font-family: 'CPCFonts'; }
+
+@media all and (max-width: 480px) { .container { width: 100%; margin: 0px; }
+  .container .container__search { padding: 10px; }
+  .container .container__search .container__searchInput { width: 80%; font-size: 13px; padding: 2px 0px; }
+  .container .container__items .container__result { padding: 10px; }
+  .container .container__items .container__result h2 { font-size: 15px; }
+  .container .container__items .container__result p { display: flex; flex-direction: column; flex-wrap: wrap; margin: 4px 0px 2px; }
+  .container .container__items .container__result span { font-size: 14px; padding: 5px 0px; flex: 1; }
+  .container .container__items .container__result .container__phone { width: auto; }
+  .container .container__items .container__result .container__phone:before { font-size: 12px; margin-right: 6px; }
+  .container .container__items .container__result .container__userId { width: auto; }
+  .container .container__items .container__result .container__policy:before { font-size: 15px; margin-right: 6px; } }

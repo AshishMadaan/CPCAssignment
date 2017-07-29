@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/AshishMadaan/CPCAssignment/issues"
   },
-  "homepage": "https://github.com/AshishMadaan/CPCAssignment#readme"
+  "homepage": "https://github.com/AshishMadaan/CPCAssignment#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-uglify": "^3.0.1",
+    "load-grunt-tasks": "^3.5.2"
+  }
 }
