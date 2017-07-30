@@ -18,6 +18,7 @@ html,body{
 .container{
    width:960px;
    margin: 0px auto;
+   position: relative;
    .container--policyHolder{
       text-align: center;
       font-size: 20px;
@@ -59,7 +60,9 @@ html,body{
       border-top: none;
       background-color: rgba(247, 247, 247, 0.5);
       max-height: 500px;
-      overflow-y: auto  ;
+      overflow-y: auto;
+      position: absolute;
+      width: 100%;
       .container__result{
          padding: 15px 20px;
          h2{

@@ -11,7 +11,7 @@ html { overflow-y: scroll; }
 
 html, body { font: 400 15px "Roboto", Arial, Helvetica, sans-serif; }
 
-.container { width: 960px; margin: 0px auto; }
+.container { width: 960px; margin: 0px auto; position: relative; }
 .container .container--policyHolder { text-align: center; font-size: 20px; font-weight: 500; }
 .container .container__search { width: 100%; padding: 15px 30px 25px; background-color: rgba(19, 28, 78, 0.8); }
 .container .container__search ::-webkit-input-placeholder { color: #a4a0b8; }
@@ -20,7 +20,7 @@ html, body { font: 400 15px "Roboto", Arial, Helvetica, sans-serif; }
 .container .container__search .container__searchInput { background: transparent; border: 0px; width: 60%; color: #fff; border-bottom: solid 1px #a4a0b8; font-size: 15px; padding: 5px 0px; letter-spacing: 1px; }
 .container .container__search .container__searchInput:focus { outline: none; }
 .container .container__search:before { content: "A"; font-size: 15px; width: 18px; height: 18px; margin-right: 10px; color: #a4a0b8; }
-.container .container__items { border: solid 5px rgba(19, 28, 78, 0.8); border-top: none; background-color: rgba(247, 247, 247, 0.5); max-height: 500px; overflow-y: auto; }
+.container .container__items { border: solid 5px rgba(19, 28, 78, 0.8); border-top: none; background-color: rgba(247, 247, 247, 0.5); max-height: 500px; overflow-y: auto; position: absolute; width: 100%; }
 .container .container__items .container__result { padding: 15px 20px; }
 .container .container__items .container__result h2 { font-weight: 400; font-size: 20px; }
 .container .container__items .container__result p { margin: 8px 0px 5px; display: flex; flex-direction: row; }

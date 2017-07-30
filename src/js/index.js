@@ -46,12 +46,12 @@ typeAheadApp.component('typeahead', {
       onSelect: '&',
       selected: "="
    },
-   controller:  ['$scope', '$timeout', typeAheadController],
+   controller:  ['$timeout', typeAheadController],
    controllerAs: 'typAhdCtrl',
    templateUrl: 'src/components/typeAheadTemplate.html'
 });
 
-function typeAheadController($scope,$timeout){
+function typeAheadController($timeout){
    var vm = this;
    vm.handleSelection = function(selectedItem) {
       vm.model = selectedItem;
