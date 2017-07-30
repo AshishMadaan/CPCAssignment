@@ -2,7 +2,7 @@
    <input type="text" class="container__searchInput" ng-model="typAhdCtrl.model" placeholder="SEARCH (Client Name / Policy Number)" ng-keydown="typAhdCtrl.selected=false" />
 </div>
 <div class="container__items container__items--mod" ng-hide="!typAhdCtrl.model.length || typAhdCtrl.selected">
-  <div class="container__result" ng-repeat="item in typAhdCtrl.items | filter:typAhdCtrl.model  track by $index" ng-click="typAhdCtrl.handleSelection(item.name)" style="cursor:pointer" ng-class="{active:isCurrent($index)}">
+   <div class="container__result" ng-repeat="item in typAhdCtrl.items | filter:typAhdCtrl.model  track by $index" ng-click="typAhdCtrl.handleSelection(item.name)" style="cursor:pointer" ng-class="{active:isCurrent($index)}">
       <h2 ng-bind="item.name"></h2>
       <p>
          <span class="container__icons container__phone" ng-bind="item.phone"></span>
