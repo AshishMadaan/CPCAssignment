@@ -32,7 +32,7 @@ html, body { font: 400 15px "Roboto", Arial, Helvetica, sans-serif; }
 .container .container__items .container__result:nth-child(1) { background-color: #e8e8e8; }
 .container .container__icons:before { font-family: 'CPCFonts'; }
 
-@media all and (max-width: 480px) { .container { width: 100%; margin: 0px; }
+@media all and (max-width: 667px) { .container { width: 100%; margin: 0px; }
   .container .container__search { padding: 10px; }
   .container .container__search .container__searchInput { width: 80%; font-size: 13px; padding: 2px 0px; }
   .container .container__items .container__result { padding: 10px; }
@@ -43,3 +43,4 @@ html, body { font: 400 15px "Roboto", Arial, Helvetica, sans-serif; }
   .container .container__items .container__result .container__phone:before { font-size: 12px; margin-right: 6px; }
   .container .container__items .container__result .container__userId { width: auto; }
   .container .container__items .container__result .container__policy:before { font-size: 15px; margin-right: 6px; } }
+@media only screen and (min-device-width: 667px) and (max-device-width: 1024px) { .container { width: 100%; } }

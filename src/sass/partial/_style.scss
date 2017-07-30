@@ -104,7 +104,7 @@ html,body{
 }
 
 
-@media all and (max-width: 480px){
+@media all and (max-width: 667px){
 
    .container{
       width:100%;
@@ -140,7 +140,6 @@ html,body{
                &:before{
                font-size: 12px;
                margin-right: 6px;
-               //color: #000;
                }
             }
             .container__userId{
@@ -154,5 +153,10 @@ html,body{
             }
          }
       }
+   }
+}
+@media only screen and (min-device-width : 667px) and (max-device-width : 1024px) {
+   .container{
+      width: 100% ;
    }
 }
