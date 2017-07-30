@@ -21,3 +21,5 @@ Using src folder for developer code & gen folder for production code and loading
 Showing 'Data not found' message incase of no result of search.
 
 Created font icons with the help of fontforge for search,phone & doc icons.
+
+Note: Please reach out to me incase of any doubt at (ashishmadaan1991@gmail.com or 09718179733).
