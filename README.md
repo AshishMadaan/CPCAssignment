@@ -1,6 +1,15 @@
-Clone the git url in localhost (xampp/wampp) server.
+Clone the git url like in desktop
 
-Run index.html in localhost server, so that all $http request will work properly.
+Open a command prompt / command line window and enter the following:
+   npm install -g http-server
+Change directory to the code folder in the command line window, e.g:
+   cd \desktop\typeAheadCPC
+Start the server with this command:
+   http-server
+Open your browser and go to the address http://localhost:8080 
+   you will see the local page of typeAhead
+
+-------------code explanation follows:-----------------
 
 In app.js file, created a app module and fetching data from json and storing in main controller scope.
 

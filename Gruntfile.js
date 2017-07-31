@@ -4,8 +4,10 @@ module.exports = function(grunt) {
    concat: {
       "index.js": {
          src: [
-            "src/jass/*.js",
-            "src/components/*.js"
+            "src/app/app.module.js",
+            "src/app/app.controller.js",
+            "src/app/services/**/*.js",
+            "src/app/components/**/*.js"
          ],
          dest: "src/js/index.js",
          nonull: true
@@ -19,12 +21,12 @@ module.exports = function(grunt) {
           },
           my_target: {
             files: [{
-                expand: true,
-                cwd: 'src/js/',
-                src: ['**/*.js'],
-              dest: 'gen/js',
-              ext: '.min.js',
-              extDot: 'last'
+               expand: true,
+               cwd: 'src/js/',
+               src: ['**/*.js'],
+               dest: 'dest/js',
+               ext: '.min.js',
+               extDot: 'last'
             }]
           }
       },
@@ -36,7 +38,7 @@ module.exports = function(grunt) {
               expand: true,
               cwd: 'src/css',
               src: ['**/*.css'],
-              dest: 'gen/css',
+              dest: 'dest/css',
               ext: '.min.css',
               extDot: 'last'
             },
@@ -64,7 +66,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'src/fonts',
             src: ['**/*.eot','**/*.ttf','**/*.woff','**/*.woff2', '**/*.otf', '**/*.svg'],
-            dest: 'gen/fonts'
+            dest: 'dest/fonts'
          }
       },
 

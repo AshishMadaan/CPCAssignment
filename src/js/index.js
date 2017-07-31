@@ -1,65 +1,76 @@
-var typeAheadApp = angular.module('app', []);
+angular.
+   module('cpcApp', []);//we can pass multiple dependency to the cppApp module here
 
-typeAheadApp.controller('mainController',['$scope','dataFactory', function($scope,dataFactory){
-   
-   dataFactory.get('./src/json/policyData.json').then(function(data) {
-      $scope.items = data;
-   });
+(function() {
+   'use strict';
 
-   $scope.name = ''; 
-   $scope.checkSelected = false;
+   angular
+      .module('cpcApp')
+      .controller('appController',['$scope','dataFactory', appController]);
 
-   $scope.onItemSelected=function(){
-      $scope.policyHolder = $scope.name;
+   function appController($scope,dataFactory){
+      var vm = $scope;
+
+      dataFactory.get('./src/jsonData/policyData.json').then(function(data) {
+         vm.items = data;
+      });
+
+      vm.name = ''; 
+      vm.userSelectedFlag = false;
+
+      vm.onItemSelected=function(){
+         vm.policyHolderName = vm.name;
+      }
+
    }
 
-}])
-typeAheadApp.factory('dataFactory', ['$http', function($http) {
-  return {
-    get: function(url) {
-      return $http.get(url).then(function(resp) {
-        return resp.data.userData; 
-      });
-    }
-  };
-}]);
-/*typeAheadApp.filter('searchFilter', function(){
-   return function(arr, searchString){
+})();
+(function() {
+   'use strict';
 
-      var result = [];
-      searchString = searchString.toLowerCase();
+   angular
+      .module('cpcApp')
+      .factory('dataFactory', ['$http', dataFactory]);
 
-      angular.forEach(arr, function(item){
-         if(item.name.toLowerCase().indexOf(searchString) !== -1){
-            result.push(item);
+   function dataFactory($http) {
+      return {
+         get: function(url) {
+            return $http.get(url).then(function(resp) {
+               return resp.data.userData; 
+            });
          }
-      });
-        
-      return result;
-        
-    };
-});*/
-typeAheadApp.component('typeahead', {
-   bindings: {
-      items: '=',
-      model: '=',
-      onSelect: '&',
-      selected: "="
-   },
-   controller:  ['$timeout', typeAheadController],
-   controllerAs: 'typAhdCtrl',
-   templateUrl: 'src/components/typeAheadTemplate.html'
-});
-
-function typeAheadController($timeout){
-   var vm = this;
-   vm.handleSelection = function(selectedItem) {
-      vm.model = selectedItem;
-      vm.current = 0;
-      vm.selected = true;
-      vm.checkSelected = true;
-      $timeout(function() {
-         vm.onSelect();
-      }, 0);
+      };
    };
-}
+
+})();
+(function() {
+   'use strict';
+
+   angular
+      .module('cpcApp')
+      .component('typeahead', {
+         bindings: {
+            items: '=',
+            model: '=',
+            onSelect: '&',
+            selected: "="
+         },
+         controller:  ['$timeout', typeAheadController],
+         controllerAs: 'typeAheadVm',
+         templateUrl: 'src/app/components/typeAhead/typeAheadTemplate.html'
+      });
+
+   function typeAheadController($timeout){
+      var vm = this;
+      vm.handleSelection = function(selectedItem) {
+         vm.model = selectedItem;
+         vm.current = 0;
+         vm.selected = true;
+         vm.userSelectedFlag = true;
+         $timeout(function() {
+            vm.onSelect();
+         }, 0);
+      };
+   }
+
+})();
