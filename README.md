@@ -1,4 +1,4 @@
-Clone the git url like in desktop
+Clone the git url like in desktop folder
 
 Open a command prompt / command line window and enter the following:
    npm install -g http-server
@@ -11,11 +11,11 @@ Open your browser and go to the address http://localhost:8080
 
 -------------code explanation follows:-----------------
 
-In app.js file, created a app module and fetching data from json and storing in main controller scope.
+In app folder, created a app.module.js for creating a app module and we can pass dependencies here to app level (like ng-route etc.) and created a app controller for fetching data from json and storing it in app controller scope.
 
 In dataFactory.js, written a code for fetching data from json stored in json folder.
 
-Crated a components folder in which typeAhead component code is present.
+Crated a components folder in which typeAhead component is present.
 
 Passing data from component to main controller through component's callback.
 
