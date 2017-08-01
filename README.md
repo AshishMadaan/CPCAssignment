@@ -1,13 +1,15 @@
-Clone the git url like in desktop folder
+Running Locally:
 
-Open a command prompt / command line window and enter the following:
-   npm install -g http-server
-Change directory to the code folder in the command line window, e.g:
-   cd \desktop\typeAheadCPC
-Start the server with this command:
-   http-server
-Open your browser and go to the address http://localhost:8080 
-   you will see the local page of typeAhead
+Make sure you have Node.js installed.
+
+git clone git@github.com:AshishMadaan/CPCAssignment.git
+
+cd CPCAssignment
+npm install -g http-server
+http-server
+
+typeAhead app should now be running on localhost:8080.
+
 
 -------------code explanation follows:-----------------
 
