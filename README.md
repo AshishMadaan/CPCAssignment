@@ -5,7 +5,9 @@ Make sure you have Node.js installed.
 git clone git@github.com:AshishMadaan/CPCAssignment.git
 
 cd CPCAssignment
+
 npm install -g http-server
+
 http-server
 
 typeAhead app should now be running on localhost:8080.
