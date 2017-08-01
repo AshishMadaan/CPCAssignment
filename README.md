@@ -12,10 +12,10 @@ Installation-------------------<br /><br />
 •	cd CPCAssignment<br />
 •	npm install -g http-server<br />
 •	http-server<br /><br />
-•	typeAhead app should now be running on localhost:8080.
+•	application should now be running on localhost:8080.
 
 <br />
-Code Explanation-----------------<br />
+Code Explanation-----------------<br /><br />
 
 •	In app folder, created a app.module.js for creating a app module and we can pass dependencies here to app level (like ng-route etc.).<br />
 •	Using a app controller for fetching data from JSON file and storing it in the app controller scope.<br />
