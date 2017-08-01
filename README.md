@@ -11,10 +11,10 @@ Installation-------------------<br /><br />
 •	git clone git@github.com:AshishMadaan/CPCAssignment.git<br />
 •	cd CPCAssignment<br />
 •	npm install -g http-server<br />
-•	http-server<br /><br />
+•	http-server<br />
 •	application should now be running on localhost:8080.
 
-<br />
+
 Code Explanation-----------------<br /><br />
 
 •	In app folder, created a app.module.js for creating a app module and we can pass dependencies here to app level (like ng-route etc.).<br />
